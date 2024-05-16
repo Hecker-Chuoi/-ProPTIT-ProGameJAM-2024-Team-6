@@ -1,43 +1,43 @@
-main-char/move-down.png
+main-char/walking-down.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-move-down
+WALKING_DOWN
   rotate: false
   xy: 0,0
   size: 56,116
   orig: 56,116
   offset: 16,0
   index: -1
-move-down
+WALKING_DOWN
   rotate: false
   xy: 56,0
   size: 56,116
   orig: 56,116
   offset: 16,0
   index: -1
-move-down
+WALKING_DOWN
   rotate: false
   xy: 112,0
   size: 56,116
   orig: 56,116
   offset: 16,0
   index: -1
-move-down
+WALKING_DOWN
   rotate: false
   xy: 168,0
   size: 56,116
   orig: 56,116
   offset: 16,0
   index: -1
-move-down
+WALKING_DOWN
   rotate: false
   xy: 224,0
   size: 56,116
   orig: 56,116
   offset: 16,0
   index: -1
-move-down
+WALKING_DOWN
   rotate: false
   xy: 280,0
   size: 56,116
@@ -46,46 +46,46 @@ move-down
   index: -1
 
 
-main-char/move-up.png
+main-char/walking-up.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-move-up
+WALKING_UP
   rotate: false
   xy: 0,0
   size: 56,112
   orig: 56,112
   offset: 16,4
   index: -1
-move-up
+WALKING_UP
   rotate: false
   xy: 56,0
   size: 56,112
   orig: 56,112
   offset: 16,4
   index: -1
-move-up
+WALKING_UP
   rotate: false
   xy: 112,0
   size: 56,112
   orig: 56,112
   offset: 16,4
   index: -1
-move-up
+WALKING_UP
   rotate: false
   xy: 168,0
   size: 56,112
   orig: 56,112
   offset: 16,4
   index: -1
-move-up
+WALKING_UP
   rotate: false
   xy: 224,0
   size: 56,112
   orig: 56,112
   offset: 16,4
   index: -1
-move-up
+WALKING_UP
   rotate: false
   xy: 280,0
   size: 56,112
@@ -94,46 +94,46 @@ move-up
   index: -1
 
 
-main-char/move-left.png
+main-char/walking-left.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-move-left
+WALKING_LEFT
   rotate: false
   xy: 0,0
   size: 72,112
   orig: 72,112
   offset: 8,4
   index: -1
-move-left
+WALKING_LEFT
   rotate: false
   xy: 72,0
   size: 72,112
   orig: 72,112
   offset: 8,4
   index: -1
-move-left
+WALKING_LEFT
   rotate: false
   xy: 144,0
   size: 72,112
   orig: 72,112
   offset: 8,4
   index: -1
-move-left
+WALKING_LEFT
   rotate: false
   xy: 216,0
   size: 72,112
   orig: 72,112
   offset: 8,4
   index: -1
-move-left
+WALKING_LEFT
   rotate: false
   xy: 288,0
   size: 72,112
   orig: 72,112
   offset: 8,4
   index: -1
-move-left
+WALKING_LEFT
   rotate: false
   xy: 360,0
   size: 72,112
@@ -142,46 +142,46 @@ move-left
   index: -1
 
 
-main-char/move-right.png
+main-char/walking-right.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-move-right
+WALKING_RIGHT
   rotate: false
   xy: 0,0
   size: 72,112
   orig: 72,112
   offset: 8,4
   index: -1
-move-right
+WALKING_RIGHT
   rotate: false
   xy: 72,0
   size: 72,112
   orig: 72,112
   offset: 8,4
   index: -1
-move-right
+WALKING_RIGHT
   rotate: false
   xy: 144,0
   size: 72,112
   orig: 72,112
   offset: 8,4
   index: -1
-move-right
+WALKING_RIGHT
   rotate: false
   xy: 216,0
   size: 72,112
   orig: 72,112
   offset: 8,4
   index: -1
-move-right
+WALKING_RIGHT
   rotate: false
   xy: 288,0
   size: 72,112
   orig: 72,112
   offset: 8,4
   index: -1
-move-right
+WALKING_RIGHT
   rotate: false
   xy: 360,0
   size: 72,112
@@ -194,28 +194,28 @@ main-char/idle.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-idle-down
+IDLE_DOWN
   rotate: false
   xy: 0,0
   size: 64,104
   orig: 64,104
   offset: 12,8
   index: -1
-idle-up
+IDLE_UP
   rotate: false
   xy: 64,0
   size: 64,104
   orig: 64,104
   offset: 12,8
   index: -1
-idle-left
+IDLE_LEFT
   rotate: false
   xy: 128,0
   size: 64,104
   orig: 64,104
   offset: 12,8
   index: -1
-idle-right
+IDLE_RIGHT
   rotate: false
   xy: 192,0
   size: 64,104
@@ -224,46 +224,46 @@ idle-right
   index: -1
 
 
-main-char/holding-move-down.png
+main-char/holding-walking-down.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-holding-move-down
+HOLDING_WALKING_DOWN
   rotate: false
   xy: 0,0
   size: 64,116
   orig: 64,116
   offset: 12,0
   index: -1
-holding-move-down
+HOLDING_WALKING_DOWN
   rotate: false
   xy: 64,0
   size: 64,116
   orig: 64,116
   offset: 12,0
   index: -1
-holding-move-down
+HOLDING_WALKING_DOWN
   rotate: false
   xy: 128,0
   size: 64,116
   orig: 64,116
   offset: 12,0
   index: -1
-holding-move-down
+HOLDING_WALKING_DOWN
   rotate: false
   xy: 192,0
   size: 64,116
   orig: 64,116
   offset: 12,0
   index: -1
-holding-move-down
+HOLDING_WALKING_DOWN
   rotate: false
   xy: 256,0
   size: 64,116
   orig: 64,116
   offset: 12,0
   index: -1
-holding-move-down
+HOLDING_WALKING_DOWN
   rotate: false
   xy: 320,0
   size: 64,116
@@ -272,46 +272,46 @@ holding-move-down
   index: -1
 
 
-main-char/holding-move-up.png
+main-char/holding-walking-up.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-holding-move-up
+HOLDING_WALKING_UP
   rotate: false
   xy: 0,0
   size: 64,112
   orig: 64,112
   offset: 12,4
   index: -1
-holding-move-up
+HOLDING_WALKING_UP
   rotate: false
   xy: 64,0
   size: 64,112
   orig: 64,112
   offset: 12,4
   index: -1
-holding-move-up
+HOLDING_WALKING_UP
   rotate: false
   xy: 128,0
   size: 64,112
   orig: 64,112
   offset: 12,4
   index: -1
-holding-move-up
+HOLDING_WALKING_UP
   rotate: false
   xy: 192,0
   size: 64,112
   orig: 64,112
   offset: 12,4
   index: -1
-holding-move-up
+HOLDING_WALKING_UP
   rotate: false
   xy: 256,0
   size: 64,112
   orig: 64,112
   offset: 12,4
   index: -1
-holding-move-up
+HOLDING_WALKING_UP
   rotate: false
   xy: 320,0
   size: 64,112
@@ -320,46 +320,46 @@ holding-move-up
   index: -1
 
 
-main-char/holding-move-left.png
+main-char/holding-walking-left.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-holding-move-left
+HOLDING_WALKING_LEFT
   rotate: false
   xy: 0,0
   size: 72,116
   orig: 72,116
   offset: 8,0
   index: -1
-holding-move-left
+HOLDING_WALKING_LEFT
   rotate: false
   xy: 72,0
   size: 72,116
   orig: 72,116
   offset: 8,0
   index: -1
-holding-move-left
+HOLDING_WALKING_LEFT
   rotate: false
   xy: 144,0
   size: 72,116
   orig: 72,116
   offset: 8,0
   index: -1
-holding-move-left
+HOLDING_WALKING_LEFT
   rotate: false
   xy: 216,0
   size: 72,116
   orig: 72,116
   offset: 8,0
   index: -1
-holding-move-left
+HOLDING_WALKING_LEFT
   rotate: false
   xy: 288,0
   size: 72,116
   orig: 72,116
   offset: 8,0
   index: -1
-holding-move-left
+HOLDING_WALKING_LEFT
   rotate: false
   xy: 360,0
   size: 72,116
@@ -368,46 +368,46 @@ holding-move-left
   index: -1
 
 
-main-char/holding-move-right.png
+main-char/holding-walking-right.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-holding-move-right
+HOLDING_WALKING_RIGHT
   rotate: false
   xy: 0,0
   size: 72,116
   orig: 72,116
   offset: 8,0
   index: -1
-holding-move-right
+HOLDING_WALKING_RIGHT
   rotate: false
   xy: 72,0
   size: 72,116
   orig: 72,116
   offset: 8,0
   index: -1
-holding-move-right
+HOLDING_WALKING_RIGHT
   rotate: false
   xy: 144,0
   size: 72,116
   orig: 72,116
   offset: 8,0
   index: -1
-holding-move-right
+HOLDING_WALKING_RIGHT
   rotate: false
   xy: 216,0
   size: 72,116
   orig: 72,116
   offset: 8,0
   index: -1
-holding-move-right
+HOLDING_WALKING_RIGHT
   rotate: false
   xy: 288,0
   size: 72,116
   orig: 72,116
   offset: 8,0
   index: -1
-holding-move-right
+HOLDING_WALKING_RIGHT
   rotate: false
   xy: 360,0
   size: 72,116
@@ -420,28 +420,28 @@ main-char/holding-idle.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-holding-idle-down
+HOLDING_IDLE_DOWN
   rotate: false
   xy: 0,0
   size: 64,104
   orig: 64,104
   offset: 12,8
   index: -1
-holding-idle-left
+HOLDING_IDLE_LEFT
   rotate: false
   xy: 64,0
   size: 64,104
   orig: 64,104
   offset: 12,8
   index: -1
-holding-idle-right
+HOLDING_IDLE_RIGHT
   rotate: false
   xy: 128,0
   size: 64,104
   orig: 64,104
   offset: 12,8
   index: -1
-holding-idle-up
+HOLDING_IDLE_UP
   rotate: false
   xy: 192,0
   size: 64,104
@@ -454,42 +454,42 @@ main-char/mopping-floor-down.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-mopping-floor-down
+MOPPING_FLOOR_DOWN
   rotate: false
   xy: 0,0
   size: 72,92
   orig: 72,92
   offset: 8,24
   index: -1
-mopping-floor-down
+MOPPING_FLOOR_DOWN
   rotate: false
   xy: 72,0
   size: 72,92
   orig: 72,92
   offset: 8,24
   index: -1
-mopping-floor-down
+MOPPING_FLOOR_DOWN
   rotate: false
   xy: 144,0
   size: 72,92
   orig: 72,92
   offset: 8,24
   index: -1
-mopping-floor-down
+MOPPING_FLOOR_DOWN
   rotate: false
   xy: 216,0
   size: 72,92
   orig: 72,92
   offset: 8,24
   index: -1
-mopping-floor-down
+MOPPING_FLOOR_DOWN
   rotate: false
   xy: 288,0
   size: 72,92
   orig: 72,92
   offset: 8,24
   index: -1
-mopping-floor-down
+MOPPING_FLOOR_DOWN
   rotate: false
   xy: 360,0
   size: 72,92
@@ -502,42 +502,42 @@ main-char/mopping-floor-up.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-mopping-floor-up
+MOPPING_FLOOR_UP
   rotate: false
   xy: 0,0
   size: 72,96
   orig: 72,96
   offset: 8,12
   index: -1
-mopping-floor-up
+MOPPING_FLOOR_UP
   rotate: false
   xy: 72,0
   size: 72,96
   orig: 72,96
   offset: 8,12
   index: -1
-mopping-floor-up
+MOPPING_FLOOR_UP
   rotate: false
   xy: 144,0
   size: 72,96
   orig: 72,96
   offset: 8,12
   index: -1
-mopping-floor-up
+MOPPING_FLOOR_UP
   rotate: false
   xy: 216,0
   size: 72,96
   orig: 72,96
   offset: 8,12
   index: -1
-mopping-floor-up
+MOPPING_FLOOR_UP
   rotate: false
   xy: 288,0
   size: 72,96
   orig: 72,96
   offset: 8,12
   index: -1
-mopping-floor-up
+MOPPING_FLOOR_UP
   rotate: false
   xy: 360,0
   size: 72,96
@@ -550,42 +550,42 @@ main-char/mopping-floor-left.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-mopping-floor-left
+MOPPING_FLOOR_LEFT
   rotate: false
   xy: 0,0
   size: 88,84
   orig: 88,84
   offset: 0,24
   index: -1
-mopping-floor-left
+MOPPING_FLOOR_LEFT
   rotate: false
   xy: 88,0
   size: 88,84
   orig: 88,84
   offset: 0,24
   index: -1
-mopping-floor-left
+MOPPING_FLOOR_LEFT
   rotate: false
   xy: 176,0
   size: 88,84
   orig: 88,84
   offset: 0,24
   index: -1
-mopping-floor-left
+MOPPING_FLOOR_LEFT
   rotate: false
   xy: 264,0
   size: 88,84
   orig: 88,84
   offset: 0,24
   index: -1
-mopping-floor-left
+MOPPING_FLOOR_LEFT
   rotate: false
   xy: 352,0
   size: 88,84
   orig: 88,84
   offset: 0,24
   index: -1
-mopping-floor-left
+MOPPING_FLOOR_LEFT
   rotate: false
   xy: 440,0
   size: 88,84
@@ -598,42 +598,42 @@ main-char/mopping-floor-right.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-mopping-floor-right
+MOPPING_FLOOR_RIGHT
   rotate: false
   xy: 0,0
   size: 88,84
   orig: 88,84
   offset: 0,24
   index: -1
-mopping-floor-right
+MOPPING_FLOOR_RIGHT
   rotate: false
   xy: 88,0
   size: 88,84
   orig: 88,84
   offset: 0,24
   index: -1
-mopping-floor-right
+MOPPING_FLOOR_RIGHT
   rotate: false
   xy: 176,0
   size: 88,84
   orig: 88,84
   offset: 0,24
   index: -1
-mopping-floor-right
+MOPPING_FLOOR_RIGHT
   rotate: false
   xy: 264,0
   size: 88,84
   orig: 88,84
   offset: 0,24
   index: -1
-mopping-floor-right
+MOPPING_FLOOR_RIGHT
   rotate: false
   xy: 352,0
   size: 88,84
   orig: 88,84
   offset: 0,24
   index: -1
-mopping-floor-right
+MOPPING_FLOOR_RIGHT
   rotate: false
   xy: 440,0
   size: 88,84
@@ -646,42 +646,42 @@ main-char/washing-dish.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-washing-dish
+CLEANING_DISH
   rotate: false
   xy: 0,0
   size: 80,112
   orig: 80,112
   offset: 8,0
   index: -1
-washing-dish
+CLEANING_DISH
   rotate: false
   xy: 80,0
   size: 80,112
   orig: 80,112
   offset: 8,0
   index: -1
-washing-dish
+CLEANING_DISH
   rotate: false
   xy: 160,0
   size: 80,112
   orig: 80,112
   offset: 8,0
   index: -1
-washing-dish
+CLEANING_DISH
   rotate: false
   xy: 240,0
   size: 80,112
   orig: 80,112
   offset: 8,0
   index: -1
-washing-dish
+CLEANING_DISH
   rotate: false
   xy: 320,0
   size: 80,112
   orig: 80,112
   offset: 8,0
   index: -1
-washing-dish
+CLEANING_DISH
   rotate: false
   xy: 400,0
   size: 80,112

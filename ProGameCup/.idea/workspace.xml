@@ -5,37 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3050b1cd-495a-4ba1-a09c-ca5b08e7ca87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/animations/Main_char_animations.atlas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/holding-idle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/holding-move-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/holding-move-left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/holding-move-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/holding-move-up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/idle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/main-char.aseprite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/mopping-floor-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/mopping-floor-left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/mopping-floor-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/mopping-floor-up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/move-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/move-left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/move-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/move-up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/washing-dish.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/mom/mom-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/mom/mom-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/mom/mom-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/mom/mom-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/mom/mom-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/mom/mom-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/animations/mom/mom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/holding-walking-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/holding-walking-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/holding-walking-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/holding-walking-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/walking-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/walking-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/walking-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/animations/main-char/walking-up.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/animations/ABC_universal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/animations/free_farm_character_shovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/animations/move.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/animations/Main_char_animations.atlas" beforeDir="false" afterPath="$PROJECT_DIR$/assets/animations/Main_char_animations.atlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/move.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/PlayerMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/PlayerMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/item/Draw.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/item/Draw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/MainGameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/MainGameScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,26 +73,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.ProGameCup:desktop [:desktop:DesktopLauncher.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/NHOM6-51",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/New folder/BTCK2/ProGameCup",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.6228151",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.ProGameCup:desktop [:desktop:DesktopLauncher.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/NHOM6-52&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/New folder/BTCK2/ProGameCup&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.6228151&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Coding\Java\BTCK2\ProGameCup\assets\animations" />
@@ -147,6 +134,7 @@
       <workItem from="1714788784461" duration="608000" />
       <workItem from="1714809249373" duration="867000" />
       <workItem from="1714855802474" duration="8274000" />
+      <workItem from="1715879234584" duration="5735000" />
     </task>
     <servers />
   </component>
