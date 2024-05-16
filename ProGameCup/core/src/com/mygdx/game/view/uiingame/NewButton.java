@@ -1,13 +1,13 @@
-package com.mygdx.game.view;
+package com.mygdx.game.view.uiingame;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.SpaceGame;
 import com.mygdx.game.common.constant.GameConstant;
-import com.mygdx.game.view.effect.MakeMusic;
+import com.mygdx.game.view.music.PlaySound;
+import com.mygdx.game.view.screens.MainGameScreen;
 import com.mygdx.game.view.screens.MainMenuScreen;
-import com.mygdx.game.view.screens.MainStory;
 
 import java.awt.*;
 import java.io.IOException;
@@ -18,6 +18,7 @@ public class NewButton {
     SpriteBatch batch;
     DrawText drawText;
     SpaceGame game;
+    PlaySound playSound;
     public boolean isPause = false;
     public boolean isStopMusic = false;
     public NewButton(SpaceGame game) {
@@ -31,7 +32,7 @@ public class NewButton {
             if(choice == 6) drawText.drawStaticText(batch, "Link Github", 80, 40, 0.6f);
             if (Gdx.input.isTouched()){
                 if (choice==1){
-                    game.setScreen(new MainStory(game));
+                    game.setScreen(new MainGameScreen(game));
                 }
 //                else if(choice == 2){
 //                   playSound.checkMusic(musicOn, musicOff, x, y, buttonWidth, buttonHeight);
@@ -59,7 +60,8 @@ public class NewButton {
             if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
                 Desktop.getDesktop().browse(new URI(link));
             }
-        } catch (IOException | URISyntaxException ignored) {
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
         }
     }
 
@@ -86,11 +88,7 @@ public class NewButton {
         }
         if(isStopMusic){
             batch.draw(musicOffButton, x, y, buttonWidth, buttonHeight);
-            MakeMusic.stopMusic();
         }
-        else{
-            batch.draw(musicOnButton, x, y, buttonWidth, buttonHeight);
-            MakeMusic.resumeMusic();
-        }
+        else batch.draw(musicOnButton, x, y, buttonWidth, buttonHeight);
     }
 }

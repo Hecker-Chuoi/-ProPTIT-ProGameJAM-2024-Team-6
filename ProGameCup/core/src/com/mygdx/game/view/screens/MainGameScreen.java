@@ -14,22 +14,17 @@ import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.mygdx.game.SpaceGame;
 import com.mygdx.game.common.constant.GameConstant;
-import com.mygdx.game.controller.CheckCollision;
-import com.mygdx.game.controller.PlayerMovement;
+import com.mygdx.game.controller.*;
 import com.mygdx.game.controller.item.*;
 import com.mygdx.game.model.Player;
-import com.mygdx.game.model.item.DynamicItem;
-import com.mygdx.game.model.item.StaticItem;
-import com.mygdx.game.view.uiingame.Holding;
-import com.mygdx.game.view.uiingame.MakeAlert;
-import com.mygdx.game.view.DrawText;
-import com.mygdx.game.view.NewButton;
+import com.mygdx.game.model.item.*;
+import com.mygdx.game.view.music.PlaySound;
+import com.mygdx.game.view.uiingame.*;
 
 import java.util.ArrayList;
 
 public class MainGameScreen implements Screen {
     Texture resume, pause, home, homePress, replay, replayPress, musicOn, musicOff;
-    float speed = 120;
     SpaceGame game;
     DrawText drawText;
     Texture walk;
@@ -81,7 +76,6 @@ public class MainGameScreen implements Screen {
         makeAlert = new MakeAlert();
         getItem = new GetItem();
         newButton = new NewButton(game);
-//        playSound = PlaySound.getInstance(batch);
         drawText = new DrawText();
         createTexture();
     }
@@ -144,7 +138,7 @@ public class MainGameScreen implements Screen {
         throwItem.updatePosition(dynamicItems, staticItems, player);
         player.setOverlap(checkCollision.checkFull(staticItems, player));
         draw.draw(dynamicItems, staticItems, player, batch, stateTime);
-
+        
         if (!player.isValidThrow()){
             if (firstValue == -1) firstValue = stateTime;
             makeAlert.drawAlert(batch, firstValue, stateTime, player);

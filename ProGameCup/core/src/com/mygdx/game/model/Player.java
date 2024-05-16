@@ -28,6 +28,8 @@ public class Player extends Sprite {
     private StaticItem container;
     private Vector2 positionThrew;
     private int statusHold;
+    private boolean isCountingXPress;
+    private int washingIndex;
 
     private LinkedHashMap<String, Animation> animations;
     private LinkedHashMap<String, TextureRegion> textures;
@@ -154,5 +156,21 @@ public class Player extends Sprite {
     public void setSpeed(float speed) {
         this.STRAIGHT_SPEED = speed;
         this.DIAGONAL_SPEED = (float) Math.sqrt(speed * speed/2);
+    }
+
+    public boolean getIsCountingXPress() {
+        return isCountingXPress;
+    }
+
+    public void setIsCountingXPress(boolean countingXPress) {
+        isCountingXPress = countingXPress;
+    }
+
+    public int getWashingIndex() {
+        return washingIndex;
+    }
+
+    public void setWashingIndex(int washingIndex) {
+        this.washingIndex = washingIndex;
     }
 }

@@ -26,7 +26,9 @@ public class PlayerMovement {
         boolean isUpKeyPressed = Gdx.input.isKeyPressed(Keys.UP);
         boolean isDownKeyPressed = Gdx.input.isKeyPressed(Keys.DOWN);
 
-        if(Gdx.input.isKeyPressed(Keys.M)){
+        if(status == CharacterStatus.CLEANING_DISH) {
+        }
+        else if(Gdx.input.isKeyPressed(Keys.M)){
             status = CharacterStatus.MOPPING_FLOOR;
         }
         else if(Gdx.input.isKeyPressed(Keys.C)){
@@ -134,6 +136,16 @@ public class PlayerMovement {
         boolean isHoldingItem = (player.getItemHolding() != null);
         CharacterStatus status = player.getStatus();
         Direction direction = player.getDirection();
+
+        if(status == CharacterStatus.CLEANING_DISH){
+            int index = player.getWashingIndex();
+            TextureRegion[] regions = (TextureRegion[]) player.getAnimation(status.name()).getKeyFrames();
+            float width = (float) regions[index].getRegionWidth()/1.5f;
+            float height = (float) regions[index].getRegionHeight()/1.5f;
+            batch.draw(regions[index], player.getX(), player.getY(), width, height);
+            return;
+        }
+
         if(status == CharacterStatus.IDLE){
             TextureRegion region =  player.getTexture((isHoldingItem ? "HOLDING_" : "") + status.name() + "_" + direction.name());
             float width = (float) region.getRegionWidth()/1.5f;
@@ -146,19 +158,19 @@ public class PlayerMovement {
                 animation = player.getAnimation(status.name());
             }
             else{
-                String animationName = new String();
+                String animationName = "";
                 if(status == CharacterStatus.WALKING)
                     animationName = (isHoldingItem ? "HOLDING_" : "");
-                animationName = status.name() + "_";
+                animationName += status.name();
 
                 if(direction == Direction.LEFT || direction == Direction.UPLEFT || direction == Direction.DOWNLEFT)
-                    animationName += "LEFT";
+                    animationName += "_LEFT";
                 else if(direction == Direction.RIGHT || direction == Direction.UPRIGHT || direction == Direction.DOWNRIGHT)
-                    animationName += "RIGHT";
+                    animationName += "_RIGHT";
                 else if(direction == Direction.UP)
-                    animationName += "UP";
+                    animationName += "_UP";
                 else if(direction == Direction.DOWN)
-                    animationName += "DOWN";
+                    animationName += "_DOWN";
                 animation = player.getAnimation(animationName);
             }
 
