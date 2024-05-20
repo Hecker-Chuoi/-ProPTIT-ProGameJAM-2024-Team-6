@@ -7,7 +7,6 @@ import com.badlogic.gdx.math.Vector2;
 import com.mygdx.game.common.constant.GameConstant;
 import com.mygdx.game.model.item.DynamicItem;
 import com.mygdx.game.model.item.Item;
-import com.mygdx.game.model.Player;
 import com.mygdx.game.model.item.StaticItem;
 
 import java.util.ArrayList;
@@ -24,19 +23,14 @@ public class CheckCollision {
     }
 
     private void updateFrame(Vector2 position) {
-        float tileSize = GameConstant.tileSize;
-        float posX = GameConstant.posMapX;
-        float posY = GameConstant.posMapY;
-        if (position.x < posX + tileSize - 0.2f * GameConstant.playerWidth)
-            position.x = posX + tileSize - 0.2f * GameConstant.playerWidth;
-        if (position.x > posX + GameConstant.mapWidth - tileSize * 2)
-            position.x = posX + GameConstant.mapWidth - tileSize * 2;
-        if (position.y < posY + tileSize + 5)
-            position.y = posY + tileSize + 5;
-        if (position.y > posY + GameConstant.mapHeight - tileSize - 10)
-            position.y = posY + GameConstant.mapHeight - tileSize - 10;
-        if (position.y > posY + 12 * tileSize + 0.7f * GameConstant.playerHeight)
-            position.y = posY + 12 * tileSize + 0.7f * GameConstant.playerHeight;
+        if (position.x < 265)
+            position.x = 265;
+        if (position.x > 755)
+            position.x = 755;
+        if (position.y < 215)
+            position.y = 215;
+        if (position.y > 600)
+            position.y = 600;
     }
 
     private boolean checkMapObject(Vector2 position, MapObjects mapObjects) {
@@ -81,25 +75,13 @@ public class CheckCollision {
         return false;
     }
 
-    public void updatePosition(Vector2 position, Vector2 oldPosition, MapObjects mapObjects
-            , ArrayList<StaticItem> staticItems, ArrayList<DynamicItem> dynamicItems) {
+    public void updatePosition(Vector2 position, Vector2 oldPosition, ArrayList<StaticItem> staticItems
+            , ArrayList<DynamicItem> dynamicItems) {
         updateFrame(position);
-        if (checkMapObject(position, mapObjects) || checkStaticItem(position, staticItems)
+        if (
+                //checkMapObject(position, mapObjects) ||
+                checkStaticItem(position, staticItems)
         || checkDynamicItem(position, dynamicItems)) position.set(oldPosition);
-    }
-
-    public boolean checkObscure(Item item, Player player){
-        return player.getX() + player.getWidth() >= item.getX()
-                && player.getX() <= item.getX() + item.getWidth()
-                && player.getY() >= item.getY() + item.getHeight() - item.getOverlap()
-                && player.getY() <= item.getY() + item.getHeight();
-    }
-
-    public boolean checkFull(ArrayList<StaticItem> items, Player player) {
-        for (Item item : items) {
-            if (checkObscure(item, player)) return true;
-        }
-        return false;
     }
 
 }
