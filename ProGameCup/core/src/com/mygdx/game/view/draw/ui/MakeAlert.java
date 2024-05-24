@@ -1,4 +1,4 @@
-package com.mygdx.game.view.ui;
+package com.mygdx.game.view.draw.ui;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;

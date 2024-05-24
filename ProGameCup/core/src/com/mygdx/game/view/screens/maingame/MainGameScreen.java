@@ -15,6 +15,9 @@ import com.mygdx.game.controller.item.setup.SetItem;
 import com.mygdx.game.controller.player.PlayerMovement;
 import com.mygdx.game.model.Player;
 import com.mygdx.game.model.item.*;
+import com.mygdx.game.view.draw.text.DrawText;
+import com.mygdx.game.view.draw.ui.MakeAlert;
+import com.mygdx.game.view.screens.Impression;
 import com.mygdx.game.view.ui.*;
 
 import java.util.ArrayList;
@@ -31,7 +34,7 @@ public class MainGameScreen implements Screen {
     NewButton newButton;
     ManagerGame managerGame;
     SetItem setItem;
-    Texture map;
+
     public MainGameScreen (SpaceGame game){
         this.game = game;
         batch = game.getBatch();
@@ -44,8 +47,8 @@ public class MainGameScreen implements Screen {
 
         TextureAtlas textureAtlas = new TextureAtlas(Gdx.files.internal("animations/Main_char_animations.atlas"));
         player = new Player(textureAtlas, animationNames, textureNames,
-                GameConstant.windowHeight/2 + 50, GameConstant.windowHeight/2+ 50,
-                GameConstant.playerWidth, GameConstant.playerHeight, 120);
+                500, 380,
+                GameConstant.PLAYER_WIDTH, GameConstant.PLAYER_HEIGHT, 120);
 
         staticItems = new ArrayList<>();
         dynamicItems = new ArrayList<>();;
@@ -54,7 +57,6 @@ public class MainGameScreen implements Screen {
         managerGame = new ManagerGame(game);
         drawText = new DrawText("fonts/char.fnt", Color.ORANGE);
         newButton = new NewButton(game);
-        map = new Texture("maps/map.png");
     }
     @Override
     public void show() {
@@ -67,12 +69,6 @@ public class MainGameScreen implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         batch.begin();
-        MakeSize makeSize = new MakeSize();
-        Vector2 sizeMap = makeSize.getSize(map, (int)GameConstant.mapSize);
-        GameConstant.mapWidth = sizeMap.x;
-        GameConstant.mapHeight = sizeMap.y;
-        batch.draw(map, GameConstant.posMapX, GameConstant.posMapY,
-                sizeMap.x, sizeMap.y);
         managerGame.update(player, dynamicItems, staticItems, batch, stateTime);
         if(!newButton.isPause) {
             stateTime += delta;

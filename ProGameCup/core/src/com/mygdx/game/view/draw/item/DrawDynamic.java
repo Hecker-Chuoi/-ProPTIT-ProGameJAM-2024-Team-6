@@ -1,10 +1,10 @@
-package com.mygdx.game.controller.draw;
+package com.mygdx.game.view.draw.item;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.model.Player;
 import com.mygdx.game.model.item.DynamicItem;
-import com.mygdx.game.view.ui.DrawText;
+import com.mygdx.game.view.draw.text.DrawText;
 
 import java.util.ArrayList;
 

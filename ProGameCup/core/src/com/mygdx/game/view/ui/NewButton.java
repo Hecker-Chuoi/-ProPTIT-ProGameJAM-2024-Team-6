@@ -6,6 +6,8 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.SpaceGame;
 import com.mygdx.game.common.constant.GameConstant;
+import com.mygdx.game.common.constant.ItemConstant;
+import com.mygdx.game.view.draw.text.DrawText;
 import com.mygdx.game.view.effect.MakeMusic;
 import com.mygdx.game.view.screens.mainmenu.MainMenuScreen;
 import com.mygdx.game.view.screens.mainstory.MainStory;
@@ -28,9 +30,9 @@ public class NewButton {
         this.batch = game.getBatch();
         drawText = new DrawText("fonts/char.fnt", Color.ORANGE);
     }
-    public void drawButton( Texture button, Texture buttonPress, int x, int y, int buttonWidth, int buttonHeight, int choice){
-        if (Gdx.input.getX()>=x && Gdx.input.getX()<=x+ buttonWidth && GameConstant.windowHeight-Gdx.input.getY()>=y && GameConstant.windowHeight-Gdx.input.getY()<=y+ buttonHeight){
-            batch.draw(buttonPress, x, y, buttonWidth, buttonHeight);
+    public void drawButton( Texture button, Texture buttonPress, int x, int y, int BUTTON_WIDTH, int BUTTON_HEIGHT, int choice){
+        if (Gdx.input.getX()>=x && Gdx.input.getX()<=x+ BUTTON_WIDTH && GameConstant.WINDOW_HEIGHT-Gdx.input.getY()>=y && GameConstant.WINDOW_HEIGHT-Gdx.input.getY()<=y+ BUTTON_HEIGHT){
+            batch.draw(buttonPress, x, y, BUTTON_WIDTH, BUTTON_HEIGHT);
             if(choice == 6) drawText.drawStaticText(batch, "Link Github", 80, 40, 0.6f);
             if (Gdx.input.isTouched()){
                 if (choice==1){
@@ -54,7 +56,7 @@ public class NewButton {
             }
         }
         else{
-            batch.draw(button, x, y, buttonWidth, buttonHeight);
+            batch.draw(button, x, y, BUTTON_WIDTH, BUTTON_HEIGHT);
         }
     }
     private void openLink(String link) {
@@ -66,31 +68,31 @@ public class NewButton {
         }
     }
 
-    public void drawPauseButton(Texture resumeButton, Texture pauseButton, int x, int y, int buttonWidth, int buttonHeight) {
+    public void drawPauseButton(Texture resumeButton, Texture pauseButton, int x, int y, int BUTTON_WIDTH, int BUTTON_HEIGHT) {
         boolean isTouched = Gdx.input.justTouched();
-        if (Gdx.input.getX() >= x && Gdx.input.getX() <= x + buttonWidth && GameConstant.windowHeight - Gdx.input.getY() >= y && GameConstant.windowHeight - Gdx.input.getY() <= y + buttonHeight) {
+        if (Gdx.input.getX() >= x && Gdx.input.getX() <= x + BUTTON_WIDTH && GameConstant.WINDOW_HEIGHT - Gdx.input.getY() >= y && GameConstant.WINDOW_HEIGHT - Gdx.input.getY() <= y + BUTTON_HEIGHT) {
             if (isTouched) {
                 isPause = !isPause;
             }
         }
         if(isPause){
-            batch.draw(pauseButton, x, y, buttonWidth, buttonHeight);
+            batch.draw(pauseButton, x, y, BUTTON_WIDTH, BUTTON_HEIGHT);
         }
-        else batch.draw(resumeButton, x, y, buttonWidth, buttonHeight);
+        else batch.draw(resumeButton, x, y, BUTTON_WIDTH, BUTTON_HEIGHT);
     }
-    public void drawMusicButton(Texture musicOnButton, Texture musicOffButton, int x, int y, int buttonWidth, int buttonHeight) {
+    public void drawMusicButton(Texture musicOnButton, Texture musicOffButton, int x, int y, int BUTTON_WIDTH, int BUTTON_HEIGHT) {
         boolean isTouched = Gdx.input.justTouched();
-        if (Gdx.input.getX() >= x && Gdx.input.getX() <= x + buttonWidth && GameConstant.windowHeight - Gdx.input.getY() >= y && GameConstant.windowHeight - Gdx.input.getY() <= y + buttonHeight) {
+        if (Gdx.input.getX() >= x && Gdx.input.getX() <= x + BUTTON_WIDTH && GameConstant.WINDOW_HEIGHT - Gdx.input.getY() >= y && GameConstant.WINDOW_HEIGHT - Gdx.input.getY() <= y + BUTTON_HEIGHT) {
             if (isTouched) {
                 isStopMusic= !isStopMusic;
             }
         }
         if(isStopMusic){
-            batch.draw(musicOffButton, x, y, buttonWidth, buttonHeight);
+            batch.draw(musicOffButton, x, y, BUTTON_WIDTH, BUTTON_HEIGHT);
             MakeMusic.stopMusic();
         }
         else{
-            batch.draw(musicOnButton, x, y, buttonWidth, buttonHeight);
+            batch.draw(musicOnButton, x, y, BUTTON_WIDTH, BUTTON_HEIGHT);
             MakeMusic.resumeMusic();
         }
     }
@@ -105,15 +107,15 @@ public class NewButton {
             int closeButtonX = x + width - 50;
             int closeButtonY = y + height - 50;
 
-            if (Gdx.input.getX() >= closeButtonX && Gdx.input.getX() <= closeButtonX + GameConstant.iconWidth
-                    && GameConstant.windowHeight - Gdx.input.getY() >= closeButtonY
-                    && GameConstant.windowHeight - Gdx.input.getY() <= closeButtonY + GameConstant.iconHeight) {
-                batch.draw(closePress, closeButtonX, closeButtonY, GameConstant.iconWidth, GameConstant.iconHeight);
+            if (Gdx.input.getX() >= closeButtonX && Gdx.input.getX() <= closeButtonX + ItemConstant.ICON_WIDTH
+                    && GameConstant.WINDOW_HEIGHT - Gdx.input.getY() >= closeButtonY
+                    && GameConstant.WINDOW_HEIGHT - Gdx.input.getY() <= closeButtonY + ItemConstant.ICON_HEIGHT) {
+                batch.draw(closePress, closeButtonX, closeButtonY, ItemConstant.ICON_WIDTH, ItemConstant.ICON_HEIGHT);
                 if (Gdx.input.justTouched()) {
                     isHowToPlayOpen = false;
                 }
             }
-            else batch.draw(close, closeButtonX, closeButtonY, GameConstant.iconWidth, GameConstant.iconHeight);
+            else batch.draw(close, closeButtonX, closeButtonY, ItemConstant.ICON_WIDTH, ItemConstant.ICON_HEIGHT);
         }
     }
 }

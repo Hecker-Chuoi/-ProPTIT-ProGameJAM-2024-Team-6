@@ -1,4 +1,4 @@
-package com.mygdx.game.controller.draw.filter;
+package com.mygdx.game.controller.filter;
 
 import com.badlogic.gdx.math.Rectangle;
 import com.mygdx.game.model.Player;
@@ -47,6 +47,17 @@ public class FilterStatic {
                 updateDynamic(dynamicTable, dynamicTop, staticItem);
             }
             else staticBottom.add(staticItem);
+        }
+        if (!staticTop.isEmpty()){
+            if (staticTop.get(0).getName().equals("bed")){
+                for (StaticItem staticItem : staticBottom){
+                    if (staticItem.getName().equals("night-stand")){
+                        staticTop.add(staticItem);
+                        staticBottom.remove(staticItem);
+                        break;
+                    }
+                }
+            }
         }
     }
 }

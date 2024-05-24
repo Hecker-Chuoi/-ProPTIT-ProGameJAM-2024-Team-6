@@ -1,4 +1,4 @@
-package com.mygdx.game.controller.draw.filter;
+package com.mygdx.game.controller.filter;
 
 import com.badlogic.gdx.math.Rectangle;
 import com.mygdx.game.model.Player;

@@ -5,15 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3050b1cd-495a-4ba1-a09c-ca5b08e7ca87" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/items/static-items/items/trash.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/items/static-items/items/trash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/items/static-items/pick-items/trash.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/items/static-items/pick-items/trash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/maps/left-map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/maps/right-map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/SpaceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/SpaceGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/common/constant/GameConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/common/constant/GameConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/CheckCollision.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/CheckCollision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/item/activity/throwitem/ThrowItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/item/activity/throwitem/ThrowItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/CheckCollision.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/discover/DiscoverDynamic.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/discover/DiscoverDynamic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/discover/DiscoverStatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/discover/DiscoverStatic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/draw/Draw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/draw/DrawDynamic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/draw/DrawStatic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/draw/filter/FilterDynamic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/draw/filter/FilterStatic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/item/activity/throwitem/ThrowFloor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/item/activity/throwitem/ThrowFloor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/item/setup/SetDynamicItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/item/setup/SetDynamicItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/item/setup/SetStaticItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/item/setup/SetStaticItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/player/PlayerMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/controller/player/PlayerMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/model/item/DynamicItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/model/item/DynamicItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/Impression.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/Impression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/maingame/ButtonGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/maingame/ButtonGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/maingame/MainGameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/maingame/MainGameScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/maingame/ManagerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/maingame/ManagerGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/mainmenu/ButtonMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/mainmenu/ButtonMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/mainmenu/MainMenuScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/mainmenu/MainMenuScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/mainstory/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/view/screens/mainstory/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/ui/DrawText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/ui/Holding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/ui/MakeAlert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/ui/NewButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/view/ui/NewButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/ui/button/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/view/ui/button/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/ui/button/InitButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/view/ui/button/InitButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/view/ui/button/menu/ManagerButtonMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/out/production/resources/items/static-items/items/trash.png" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/out/production/resources/items/static-items/items/trash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/out/production/resources/items/static-items/pick-items/trash.png" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/out/production/resources/items/static-items/pick-items/trash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/out/production/resources/maps/left-map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/out/production/resources/maps/right-map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/com/mygdx/game/DesktopLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/com/mygdx/game/DesktopLauncher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,26 +96,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.ProGameCup:desktop [:desktop:DesktopLauncher.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/NHOM6-65",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/New folder/BTCK2/ProGameCup",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.6228151",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.ProGameCup:desktop [:desktop:DesktopLauncher.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/NHOM6-65&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/New folder/BTCK2/ProGameCup&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.6228151&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Coding\Java\BTCK2\ProGameCup\assets\animations" />

@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.SpaceGame;
 import com.mygdx.game.common.constant.GameConstant;
+import com.mygdx.game.common.constant.ItemConstant;
 import com.mygdx.game.view.ui.NewButton;
 import com.mygdx.game.view.ui.button.Button;
 import com.mygdx.game.view.ui.button.ManagerButton;
@@ -12,11 +13,11 @@ import java.util.ArrayList;
 
 public class ButtonMenu {
     Texture play, playPress, leaderboard, leaderboardPress, back, backPress, github, githubPress, musicOn, musicOff, howToPlay, howToPlayPress;
-    int widthButton = GameConstant.buttonWidth;
-    int heightButton = GameConstant.buttonHeight;
-    int widthIcon = GameConstant.iconWidth;
-    int heightIcon = GameConstant.iconHeight;
-    int posX = (int)(GameConstant.windowWidth- widthButton)/2;
+    int widthButton = ItemConstant.BUTTON_WIDTH;
+    int heightButton = ItemConstant.BUTTON_HEIGHT;
+    int widthIcon = ItemConstant.ICON_WIDTH;
+    int heightIcon = ItemConstant.ICON_HEIGHT;
+    int posX = (int)(GameConstant.WINDOW_WIDTH- widthButton)/2;
     SpriteBatch batch;
     SpaceGame game;
     ArrayList<Button> listButton;
