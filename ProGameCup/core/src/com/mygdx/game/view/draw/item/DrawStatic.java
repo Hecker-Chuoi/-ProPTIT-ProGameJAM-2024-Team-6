@@ -2,8 +2,10 @@ package com.mygdx.game.view.draw.item;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Vector2;
 import com.mygdx.game.common.constant.GameConstant;
 import com.mygdx.game.common.constant.MapConstant;
+import com.mygdx.game.controller.MakeSize;
 import com.mygdx.game.model.Player;
 import com.mygdx.game.model.item.DynamicItem;
 import com.mygdx.game.model.item.Item;
@@ -30,8 +32,10 @@ public class DrawStatic {
     }
 
     public void drawNoteName(Item item, SpriteBatch batch, DrawText drawText){
-        batch.draw(note, (GameConstant.WINDOW_WIDTH-note.getWidth())/2
-                , MapConstant.POS_MAP_Y + MapConstant.MAP_HEIGHT + 10);
+        MakeSize makeSize = new MakeSize();
+        Vector2 sizeNote = makeSize.getSize(note, 550);
+        batch.draw(note, (GameConstant.WINDOW_WIDTH-note.getWidth())/2 + 30
+                , MapConstant.POS_MAP_Y + MapConstant.MAP_HEIGHT + 10, sizeNote.x, sizeNote.y);
         String noteText;
         if (item instanceof StaticItem){
             noteText = "It's the " + item.getName() + ".";
@@ -39,7 +43,7 @@ public class DrawStatic {
         else{
             noteText = "It's a " + item.getName() + ".";
         }
-        noteX = (GameConstant.WINDOW_WIDTH-note.getWidth())/2 + 10;
+        noteX = (GameConstant.WINDOW_WIDTH-note.getWidth())/2 + 40;
         noteY = MapConstant.POS_MAP_Y + MapConstant.MAP_HEIGHT + note.getHeight() - 5;
         drawText.drawStaticText(batch, noteText, noteX, noteY,0.5f);
     }

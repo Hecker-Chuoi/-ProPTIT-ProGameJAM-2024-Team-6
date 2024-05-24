@@ -19,7 +19,7 @@ public class SpaceGame extends Game {
 	public void create () {
 		batch = new SpriteBatch();
 		MakeMusic.playMusic("music/SmoothSailing.mp3");
-		this.setScreen(new MainGameScreen(this));
+		this.setScreen(new MainMenuScreen(this));
 	}
 
 	@Override
